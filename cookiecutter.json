@@ -1,3 +1,7 @@
 {
-    "profile_name": "picas"
+    "profile_name": "picas",
+    "picas_host_url": "",
+    "picas_database": "",
+    "picas_username": "",
+    "picas_password": ""
 }
