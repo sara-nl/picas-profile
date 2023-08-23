@@ -1,4 +1,4 @@
-PICAS_HOST_URL="https://picas.surfsara.nl:6984"
-PICAS_DATABASE="lodewijkdb"
-PICAS_USERNAME="lodewijk-user"
-PICAS_PASSWORD="5drTHqcL"
+PICAS_HOST_URL="{{cookiecutter.picas_host_url}}"
+PICAS_DATABASE="{{cookiecutter.picas_database}}"
+PICAS_USERNAME="{{cookiecutter.picas_username}}"
+PICAS_PASSWORD="{{cookiecutter.picas_password}}"
