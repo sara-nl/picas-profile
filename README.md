@@ -62,7 +62,9 @@ where N is the number of jobs you want to run in parallel, for the Basic example
 You will notice the snakemake steps stall. This is because there is no client running to execute the code that is sent to the DB. 
 In parallel to snakemake communicating with the DB, you have to run a job that performs the work that is stored in the DB. 
 You can start a job by running the `local-example.py` from the `picasclient` examples folder. The picasclient documentation describes how to do this. 
-The picasclient will run for a short time by default before stopping if there is no work to be done. To run the whole snakemake example, set the time the ExampleActor runs to 600 seconds (10 minutes) or similar. 
+Ensure that the environment that the picasclient is run in also contains snakemake and all dependencies needed for the code, to ensure the code from snakemake can actually be executed.
+
+The picasclient will run for a short time by default before stopping if there is no work to be done. To run the whole snakemake example, set the time the ExampleActor runs to 600 seconds (10 minutes) or similar by changing the `time_elapsed` argument value. 
 
 Now run the example with 
 
