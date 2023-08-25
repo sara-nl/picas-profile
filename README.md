@@ -64,7 +64,13 @@ In parallel to snakemake communicating with the DB, you have to run a job that p
 You can start a job by running the `local-example.py` from the `picasclient` examples folder. The picasclient documentation describes how to do this. 
 The picasclient will run for a short time by default before stopping if there is no work to be done. To run the whole snakemake example, set the time the ExampleActor runs to 600 seconds (10 minutes) or similar. 
 
-Now run the example with `python local-example.py`. The example will start a processing script that fetches the tokens one by one from the DB and evaluates the code that snakemake has written in the token. By doing so the snakemake steps are performed, and the profile communicates state of the tokens in the DB back to snakemake. On subsequent steps, snakemake will send the next tokens to the DB and so the processing continues.
+Now run the example with 
+
+```
+python local-example.py
+``` 
+
+The example will start a processing script that fetches the tokens one by one from the DB and evaluates the code that snakemake has written in the token. By doing so the snakemake steps are performed, and the profile communicates state of the tokens in the DB back to snakemake. On subsequent steps, snakemake will send the next tokens to the DB and so the processing continues.
 
 Having such a DB with tokens allows you to run the picasclient on any compute infrastructure, while having control over the tokens in the DB before they are fetched by the client.
 
