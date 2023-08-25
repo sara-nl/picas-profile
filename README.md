@@ -48,6 +48,8 @@ When asked for the PiCaS information, insert the information needed to connect t
 Running
 =======
 
+## Run snakemake
+
 The snakemake example is used to showcase the picas workflow.
 
 First make sure you can run the Basic Workflow as given in the [snakemake documentation](https://snakemake.readthedocs.io/en/stable/tutorial/basics.html).
@@ -58,6 +60,8 @@ snakemake --profile picas -j N ...
 ```
 
 where N is the number of jobs you want to run in parallel, for the Basic example, you only have to use up to 3 as there are 3 parallel steps in the snakemake graph (A, B and C in the samples).
+
+## Run picasclient
 
 You will notice the snakemake steps stall. This is because there is no client running to execute the code that is sent to the DB. 
 In parallel to snakemake communicating with the DB, you have to run a job that performs the work that is stored in the DB. 
