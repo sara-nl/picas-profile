@@ -1,7 +1,7 @@
 PiCaS snakemake profile
 -----------------------
 
-The Pitch-Catch System, or PiCaS, work management tool that can work large amounts of jobs on a heterogeneous compute infrastructure. It  is developed by [SURF](www.surf.nl) and relies on a CouchDB server to keep track of the work itself. The user documentation can be found [here](https://doc.grid.surfsara.nl/en/latest/Pages/Practices/picas/picas_overview.html), and the source code with examples [here](https://github.com/sara-nl/picasclient/).
+The Pitch-Catch System, or PiCaS, work management tool that can work large amounts of jobs on a heterogeneous compute infrastructure. It  is developed by [SURF](http://www.surf.nl) and relies on a CouchDB server to keep track of the work itself. The user documentation can be found [here](https://doc.grid.surfsara.nl/en/latest/Pages/Practices/picas/picas_overview.html), and the source code with examples [here](https://github.com/sara-nl/picasclient/).
 
 Integrating PiCaS (or picas) with snakemake allows you to send the work snakemake creates from the Snakefile to send it to any heterogeneous compute infrastructure that is connected to your picas database containing the work.
 
