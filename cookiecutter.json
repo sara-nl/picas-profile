@@ -3,5 +3,8 @@
     "picas_host_url": "",
     "picas_database": "",
     "picas_username": "",
-    "picas_password": ""
+    "picas_password": "",
+    "no_shared_fs": [false, true],
+    "default_remote_provider": "gfal",
+    "default_remote_prefix": "gridftp.grid.sara.nl:2811/pnfs/grid.sara.nl/data/"
 }

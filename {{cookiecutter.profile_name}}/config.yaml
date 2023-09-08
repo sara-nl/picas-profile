@@ -5,3 +5,9 @@ max-jobs-per-second: 1
 max-status-checks-per-second: 1
 restart-times: 5
 local-cores: 1
+no-shared-fs: {{cookiecutter.no_shared_fs}}
+{%- if cookiecutter.no_shared_fs == false -%}
+{%- elif cookiecutter.no_shared_fs == true -%}
+default-remote-provider: {{cookiecutter.default_remote_provider}}
+default-remote-prefix: {{cookiecutter.default_remote_prefix}}
+{% endif %}
