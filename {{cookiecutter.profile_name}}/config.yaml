@@ -9,5 +9,5 @@ no-shared-fs: {{cookiecutter.no_shared_fs}}
 {%- if cookiecutter.no_shared_fs == false -%}
 {%- elif cookiecutter.no_shared_fs == true -%}
 default-remote-provider: {{cookiecutter.default_remote_provider}}
-default-remote-prefix: {{cookiecutter.default_remote_prefix}}
+default-remote-prefix: {{cookiecutter.default_remote_prefix}}/{{cookiecutter.storage_path}}
 {% endif %}
