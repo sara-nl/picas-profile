@@ -64,7 +64,7 @@ cd ~/.config/snakemake
 cookiecutter https://github.com/sara-nl/picas-profile.git
 ```
 
-When asked for the PiCaS information, insert the information needed to connect to your PiCaS instance.
+When asked for the PiCaS information, insert the information needed to connect to your PiCaS instance. NB: The `no_shared_fs` is used for Grid storage. If you have no shared file-system, like a regular drive on a laptop or mounted storage on a compute cluster, set this to true and input the necessary information to approach your storage cluster. The default protocol is set to gfal2, but this can be overriden if needed.
 
 Running
 =======
