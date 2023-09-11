@@ -125,6 +125,8 @@ conda install python-gfal2
 
 Gfal2 is used for interacting with Grid Storage. Now publish the conda environment with `publish-my-software` or equivalent and wait until its available on CVMFS.
 
+If you are having trouble installing your environment on CVMFS, we suggest reading the README for the [grid profile](https://github.com/Snakemake-Profiles/surfsara-grid). (NB: this execution of this profile is currently broken, but the Setup is fine.)
+
 Next, set up the data needed for the snakemake example on your grid storage, see the tutorial linked at the top of this subsection.
 
 NB: Unfortunately, in the first step of the snakemake example, the `genome.fa.*` files need to be available to the `bwa mem` and/or `samtools` commands, so this step has to be done locally and the output has to be uploaded to your storage too. As these files are not explicitly called in the snakemake example, the job will not explicitly fetch them from storage, and thus the files are not available and `bwa mem` and/or `samtools` fail.
