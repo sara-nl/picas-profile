@@ -53,7 +53,7 @@ elif status == "error":
 elif status == "":
     print("failed")
 elif status == "todo":
-    print("pending")
+    print("running")
 elif status == "locked":
     print("running")
 else:
