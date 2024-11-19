@@ -1,6 +1,7 @@
 jobscript: "picas-jobscript.tpl"
-cluster: "picas-submit.py"
-cluster-status: "picas-status.py"
+executor: "cluster-generic"
+cluster-generic-submit-cmd: "picas-submit.py"
+cluster-generic-status-cmd: "picas-status.py"
 max-jobs-per-second: 1
 max-status-checks-per-second: 1
 restart-times: 5
